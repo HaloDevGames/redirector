@@ -1,0 +1,14 @@
+{
+  "name": "hdg-redirect",
+  "version": "1.0.0",
+  "description": "Quick and simple redirect server for directing requests to another domain",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "ActuallyHalowo",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
