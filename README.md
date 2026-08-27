@@ -8,7 +8,7 @@ git clone https://github.com/HaloDevGames/redirector
 cd redirector
 ```
 Populate the `.env_sample` and rename it to `.env`
-Instal dependencies and start
+Install dependencies and start
 ```sh
 npm install
 npm start
