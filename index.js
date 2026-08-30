@@ -1,6 +1,6 @@
 const http = require("node:http")
 const dotenv = require("dotenv")
-dotenv.config();
+dotenv.config()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -15,21 +15,21 @@ const server = http.createServer((request, response) => {
 
 	switch (url) { 
 		case "/":
-			response.writeHead(302, {
+			response.writeHead(308, {
 				"Location": process.env.DOMAIN+"/hdg"
 			})
 			response.end()
 
 			break
 		case "/developers":
-			response.writeHead(302, {
+			response.writeHead(308, {
 				"Location": process.env.DOMAIN+"/hdg/developers"
 			})
 			response.end()
 
 			break
 		default:
-			response.writeHead(302, {
+			response.writeHead(308, {
 				"Location": process.env.DOMAIN+url
 			})
 			response.end()
@@ -41,4 +41,4 @@ const server = http.createServer((request, response) => {
 // make the server
 server.listen(process.env.PORT, "127.0.0.1", () => {
 	console.log("Listening on 127.0.0.1:"+process.env.PORT)
-});
+})
